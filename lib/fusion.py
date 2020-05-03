@@ -6,4 +6,4 @@ def Image_Fusion(L, A, B):
     for i in range(h):
         for j in range(w):
             img[i][j] = np.sqrt((L[i][j]**2) + (A[i][j]**2) + (B[i][j]**2))
-    return img
+    return img.astype(np.uint8)
